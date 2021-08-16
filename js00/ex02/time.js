@@ -6,9 +6,3 @@ const timeWarp = (newMonth, newDay) => {
     month.setDate(newDay);
     day = month.getDate();
 }
-
-// console.log(month.getMonth(), day);
-// timeWarp(5, 10);
-// console.log(month.getMonth(), day);
-// timeWarp(11, 20);
-// console.log(month.getMonth(), day);

@@ -32,6 +32,3 @@ function stackPop(stack){
     }
     stack.arr = temp;
 }
-
-// let test = stackCreate();
-// stackEmpty(test);

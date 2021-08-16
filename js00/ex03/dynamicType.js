@@ -36,13 +36,3 @@ const dynamicType = {
         }
     }
 }
-
-// dynamicType.put(42);
-// dynamicType.change("String");
-// dynamicType.printType();
-// dynamicType.change("Number");
-// dynamicType.printType();
-// dynamicType.change("Object");
-// dynamicType.printType();
-// dynamicType.change("Array");
-// dynamicType.printType();
