@@ -44,15 +44,14 @@ function calcDiscountedPrice(){
 }
 
 function update(){
-    product.name = document.getElementsByClassName("name")[0].value;
-    product.price = document.getElementsByClassName("price")[0].value;
-    product.isMember = document.getElementsByClassName("isMember")[0].checked;
-    product.level = document.getElementsByClassName("level")[0].value;
+    product.name = document.querySelector(".name").value;
+    product.price = document.querySelector(".price").value;
+    product.isMember = document.querySelector(".isMember").checked;
+    product.level = document.querySelector(".level").value;
     product.discountedPrice = calcDiscountedPrice();
 
-    const list = document.getElementsByClassName("list")[0].getElementsByTagName("li");
+    const list = document.querySelector(".list").getElementsByTagName("li");
     list[0].innerText = `상품명: ${product.name}`;
     list[1].innerText = `원가: ${product.price}`;
     list[2].innerText = `할인가: ${product.discountedPrice}`;
-    console.log(product);
 }
