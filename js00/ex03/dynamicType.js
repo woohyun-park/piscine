@@ -3,7 +3,7 @@ const dynamicType = {
     after: { type: undefined, value: undefined },
     isEmpty: true,
     put: function(input){
-        if(this.isEmpty === true){
+        if(this.isEmpty === false){
             return ;
         }
         this.before.value = input;
